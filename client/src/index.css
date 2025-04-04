@@ -79,10 +79,10 @@
     @apply relative h-2 w-full overflow-hidden rounded-full bg-gray-200;
   }
   
-  .progress-modern-value {
-    @apply h-full rounded-full transition-all duration-300;
-    background: linear-gradient(90deg, hsl(265 80% 50%), hsl(220 90% 50%));
-    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5);
+  /* Override the default Shadcn progress bar for our modern design */
+  .progress-modern [data-radix-progress-indicator] {
+    background: linear-gradient(90deg, hsl(265 80% 50%), hsl(220 90% 50%)) !important;
+    box-shadow: 0 0 10px rgba(124, 58, 237, 0.5) !important;
   }
   
   /* Scoring circles */

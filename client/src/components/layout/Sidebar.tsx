@@ -15,7 +15,7 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
   
   const sidebarClass = isOpen
     ? "fixed inset-0 z-50 flex md:hidden transform transition-transform duration-300 ease-in-out"
-    : "hidden md:flex md:w-72 flex-col fixed inset-y-0 z-50 transform transition-transform duration-300 ease-in-out";
+    : "hidden md:flex md:w-64 flex-col fixed inset-y-0 z-50 transform transition-transform duration-300 ease-in-out";
     
   // Close sidebar when clicking outside on mobile
   useEffect(() => {

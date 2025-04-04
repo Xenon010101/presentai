@@ -18,7 +18,7 @@ function Router() {
     <div className="flex h-screen overflow-hidden">
       <Sidebar isOpen={mobileMenuOpen} setIsOpen={setMobileMenuOpen} />
       
-      <main className="flex-1 overflow-y-auto md:ml-64 h-full">
+      <main className="flex-1 overflow-y-auto md:ml-[16rem] h-full">
         {/* Mobile menu toggle header */}
         <div className="md:hidden bg-white border-b border-slate-200">
           <div className="h-16 flex items-center justify-between px-4">
