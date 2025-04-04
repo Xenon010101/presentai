@@ -92,10 +92,8 @@ export default function PastEvaluations() {
                         {evaluation.overallScore}%
                       </div>
                     )}
-                    <Link href={`/analysis/${evaluation.id}`}>
-                      <a className="inline-flex items-center px-3 py-1.5 border border-transparent rounded-md text-sm font-medium text-white bg-primary-600 hover:bg-primary-700">
-                        {evaluation.status === "processing" ? "View Progress" : "View Analysis"}
-                      </a>
+                    <Link href={`/analysis/${evaluation.id}`} className="inline-flex items-center px-3 py-1.5 border border-transparent rounded-md text-sm font-medium text-white bg-primary-600 hover:bg-primary-700">
+                      {evaluation.status === "processing" ? "View Progress" : "View Analysis"}
                     </Link>
                   </div>
                 </div>
@@ -112,11 +110,9 @@ export default function PastEvaluations() {
               </div>
               <h3 className="text-lg font-medium text-slate-900 mb-2">No evaluations found</h3>
               <p className="text-slate-500 mb-4">You haven't uploaded any presentation videos yet</p>
-              <Link href="/upload">
-                <a className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
-                  <i className="ri-add-line mr-2"></i>
-                  Upload Your First Video
-                </a>
+              <Link href="/upload" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                <i className="ri-add-line mr-2"></i>
+                Upload Your First Video
               </Link>
             </div>
           </CardContent>

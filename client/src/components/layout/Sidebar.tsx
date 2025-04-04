@@ -40,37 +40,31 @@ export default function Sidebar({ isOpen, setIsOpen }: SidebarProps) {
           
           {/* Navigation */}
           <nav className="flex-1 pt-4 px-4 space-y-1 overflow-y-auto scrollbar-hide">
-            <Link href="/">
-              <a className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
+            <Link href="/" className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
                 isActive("/") 
                   ? "bg-primary-50 text-primary-700" 
                   : "text-slate-700 hover:bg-slate-100"
               }`}>
                 <i className="ri-dashboard-line mr-3 text-lg"></i>
                 Dashboard
-              </a>
             </Link>
             
-            <Link href="/upload">
-              <a className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
+            <Link href="/upload" className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
                 isActive("/upload") 
                   ? "bg-primary-50 text-primary-700" 
                   : "text-slate-700 hover:bg-slate-100"
               }`}>
                 <i className="ri-upload-cloud-line mr-3 text-lg"></i>
                 Upload Video
-              </a>
             </Link>
             
-            <Link href="/evaluations">
-              <a className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
+            <Link href="/evaluations" className={`flex items-center px-3 py-2 text-sm font-medium rounded-md ${
                 isActive("/evaluations") 
                   ? "bg-primary-50 text-primary-700" 
                   : "text-slate-700 hover:bg-slate-100"
               }`}>
                 <i className="ri-history-line mr-3 text-lg"></i>
                 Past Evaluations
-              </a>
             </Link>
           </nav>
           

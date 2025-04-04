@@ -30,10 +30,8 @@ export default function Dashboard() {
               <p className="text-sm text-slate-500">
                 Upload a video recording of your presentation for AI analysis and feedback.
               </p>
-              <Link href="/upload">
-                <a className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-2">
-                  Upload Video
-                </a>
+              <Link href="/upload" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-2">
+                Upload Video
               </Link>
             </div>
           </CardContent>
@@ -49,10 +47,8 @@ export default function Dashboard() {
               <p className="text-sm text-slate-500">
                 View your previous presentation evaluations and track your progress.
               </p>
-              <Link href="/evaluations">
-                <a className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-2">
-                  View History
-                </a>
+              <Link href="/evaluations" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-2">
+                View History
               </Link>
             </div>
           </CardContent>
@@ -120,10 +116,8 @@ export default function Dashboard() {
                         </div>
                       </div>
                     )}
-                    <Link href={`/analysis/${evaluation.id}`}>
-                      <a className="inline-flex items-center px-3 py-1.5 border border-transparent rounded-md text-sm font-medium text-white bg-primary-600 hover:bg-primary-700">
-                        {evaluation.status === "processing" ? "View Progress" : "View Analysis"}
-                      </a>
+                    <Link href={`/analysis/${evaluation.id}`} className="inline-flex items-center px-3 py-1.5 border border-transparent rounded-md text-sm font-medium text-white bg-primary-600 hover:bg-primary-700">
+                      {evaluation.status === "processing" ? "View Progress" : "View Analysis"}
                     </Link>
                   </div>
                 </div>
@@ -135,10 +129,8 @@ export default function Dashboard() {
         <Card>
           <CardContent className="p-6 text-center">
             <p className="text-slate-500">No evaluations found. Upload a video to get started.</p>
-            <Link href="/upload">
-              <a className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-4">
-                Upload Video
-              </a>
+            <Link href="/upload" className="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 mt-4">
+              Upload Video
             </Link>
           </CardContent>
         </Card>
