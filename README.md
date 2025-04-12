@@ -129,8 +129,6 @@ MIT License
 
 ## 👋 Contact
 
-- Developer: Your Name
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
-
----
+- Developer: Diabolic Devs
+- GitHub: [(https://github.com/Raghavyd/presentai)]
+- Email: 
